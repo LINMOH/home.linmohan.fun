@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>林墨瀚的主页</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    body {
+      background: radial-gradient(circle, #0a3d6e, #002d4b, #001f36);
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    .card {
+      @apply bg-gray-900 hover:bg-gray-800 text-white rounded-xl p-4 shadow-md transition transform hover:-translate-y-1;
+    }
+  </style>
+</head>
+<body class="text-white flex flex-col items-center justify-center min-h-screen px-4">
+
+  <!-- Header -->
+  <header class="text-center mb-12">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-blue-100">林墨瀚的网站导航页</h1>
+    <p class="text-gray-200 text-lg">欢迎来到我的个人网站地图</p>
+  </header>
+
+  <!-- Website Map -->
+  <section class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl w-full">
+    <a href="https://linmohan.fun" class="card text-center">
+      <i class="ri-earth-line text-3xl mb-2 text-blue-400"></i>
+      <p>博客</p>
+    </a>
+    <a href="https://home.linmohan.fun" class="card text-center">
+      <i class="ri-home-5-line text-3xl mb-2 text-purple-400"></i>
+      <p>主页</p>
+    </a>
+    <a href="https://home.linmohan.fun/ziwojieshao/main.html" class="card text-center">
+      <i class="ri-user-3-line text-3xl mb-2 text-green-400"></i>
+      <p>个人介绍</p>
+    </a>
+    <a href="https://home.linmohan.fun/sub/old.html" class="card text-center">
+      <i class="ri-history-line text-3xl mb-2 text-yellow-400"></i>
+      <p>旧版本主页</p>
+    </a>
+    <a href="https://home.linmohan.fun/sub/pay.html" class="card text-center">
+      <i class="ri-money-dollar-circle-line text-3xl mb-2 text-red-400"></i>
+      <p>赞助</p>
+    </a>
+    <a href="https://book.linmohan.fun" class="card text-center">
+      <i class="ri-book-line text-3xl mb-2 text-teal-400"></i>
+      <p>电子书库</p>
+    </a>
+    <a href="https://home.linmohan.fun/sub/q_a.html" class="card text-center">
+      <i class="ri-question-line text-3xl mb-2 text-orange-400"></i>
+      <p>调查问卷</p>
+    </a>
+    <a href="https://home.linmohan.fun/sub/chuban.html" class="card text-center">
+      <i class="ri-bookmark-line text-3xl mb-2 text-indigo-400"></i>
+      <p>初版网页</p>
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-12 text-center text-gray-500 text-sm">
+    <p>© 2025 林墨瀚</p>
+  </footer>
+
+</body>
+</html>
