@@ -15,7 +15,7 @@
       background-size: cover;
       background-position: center;
       backdrop-filter: blur(10px); /* 高斯模糊背景 */
-      overflow: hidden;
+      overflow: auto;
     }
 
     .glass-card {
@@ -46,6 +46,24 @@
       0% { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
     }
+    @media (max-width: 640px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 640px) and (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
   </style>
 </head>
 <body class="text-white flex flex-col items-center justify-center min-h-screen px-4">
