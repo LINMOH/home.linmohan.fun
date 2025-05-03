@@ -1,62 +1,120 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>林墨瀚的网站导航页</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.37.3"></script>
   <style>
     body {
       background: radial-gradient(circle, #0a3d6e, #002d4b, #001f36);
       font-family: 'Helvetica Neue', sans-serif;
+      background-image: url('https://s1.imagehub.cc/images/2025/05/03/d3353a78a5896ab3f3aab89de7b2201d.jpeg');
+      background-size: cover;
+      background-position: center;
+      backdrop-filter: blur(10px); /* 高斯模糊背景 */
+      overflow: hidden;
     }
-    .card {
-      @apply bg-gray-900 hover:bg-gray-800 text-white rounded-xl p-4 shadow-md transition transform hover:-translate-y-1;
+
+    .glass-card {
+      backdrop-filter: blur(20px); /* 增加高斯模糊强度 */
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+
+    .glass-card:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* 增加阴影效果 */
+    }
+
+    .text-light {
+      color: #000000; /* Black text color */
+    }
+
+    .icon-light {
+      color: #000000; /* Black icon color */
+    }
+
+    /* Animation for card fade-in */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body class="text-white flex flex-col items-center justify-center min-h-screen px-4">
 
+  <!-- Snowflakes with tsparticles -->
+  <div id="tsparticles"></div>
+
   <!-- Header -->
   <header class="text-center mb-12">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-blue-100">林墨瀚的网站导航页</h1>
-    <p class="text-gray-200 text-lg">欢迎来到我的个人网站地图</p>
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-pink-400 text-light">林墨瀚的网站导航页</h1>
   </header>
 
-  <!-- Website Map -->
-  <section class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl w-full">
-    <a href="https://linmohan.fun" class="card text-center">
-      <i class="ri-earth-line text-3xl mb-2 text-blue-400"></i>
-      <p>博客</p>
+  <!-- Website Grid -->
+  <section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl w-full">
+    <a href="https://linmohan.fun" class="glass-card rounded-xl p-6 flex flex-col items-center justify-center text-center">
+      <i class="ri-earth-line text-3xl mb-2 icon-light"></i>
+      <p class="text-light">博客</p>
     </a>
-    <a href="https://home.linmohan.fun" class="card text-center">
-      <i class="ri-home-5-line text-3xl mb-2 text-purple-400"></i>
-      <p>主页</p>
+    <a href="https://home.linmohan.fun" class="glass-card rounded-xl p-6 flex flex-col items-center justify-center text-center">
+      <i class="ri-home-5-line text-3xl mb-2 icon-light"></i>
+      <p class="text-light">主页</p>
     </a>
-    <a href="https://home.linmohan.fun/ziwojieshao/main.html" class="card text-center">
-      <i class="ri-user-3-line text-3xl mb-2 text-green-400"></i>
-      <p>个人介绍</p>
+    <a href="https://home.linmohan.fun/ziwojieshao/main.html" class="glass-card rounded-xl p-6 flex flex-col items-center justify-center text-center">
+      <i class="ri-user-3-line text-3xl mb-2 icon-light"></i>
+      <p class="text-light">个人介绍</p>
     </a>
-    <a href="https://home.linmohan.fun/sub/old.html" class="card text-center">
-      <i class="ri-history-line text-3xl mb-2 text-yellow-400"></i>
-      <p>旧版本主页</p>
+    <a href="https://home.linmohan.fun/sub/old.html" class="glass-card rounded-xl p-6 flex flex-col items-center justify-center text-center">
+      <i class="ri-history-line text-3xl mb-2 icon-light"></i>
+      <p class="text-light">旧版本主页</p>
     </a>
-    <a href="https://home.linmohan.fun/sub/pay.html" class="card text-center">
-      <i class="ri-money-dollar-circle-line text-3xl mb-2 text-red-400"></i>
-      <p>赞助</p>
+    <a href="https://home.linmohan.fun/sub/pay.html" class="glass-card rounded-xl p-6 flex flex-col items-center justify-center text-center">
+      <i class="ri-money-dollar-circle-line text-3xl mb-2 icon-light"></i>
+      <p class="text-light">赞助</p>
     </a>
-    <a href="https://book.linmohan.fun" class="card text-center">
-      <i class="ri-book-line text-3xl mb-2 text-teal-400"></i>
-      <p>电子书库</p>
+    <a href="https://book.linmohan.fun" class="glass-card rounded-xl p-6 flex flex-col items-center justify-center text-center">
+      <i class="ri-book-line text-3xl mb-2 icon-light"></i>
+      <p class="text-light">电子书库</p>
     </a>
-    <a href="https://home.linmohan.fun/sub/q_a.html" class="card text-center">
-      <i class="ri-question-line text-3xl mb-2 text-orange-400"></i>
-      <p>调查问卷</p>
+    <a href="https://home.linmohan.fun/sub/q_a.html" class="glass-card rounded-xl p-6 flex flex-col items-center justify-center text-center">
+      <i class="ri-question-line text-3xl mb-2 icon-light"></i>
+      <p class="text-light">调查问卷</p>
     </a>
-    <a href="https://home.linmohan.fun/sub/chuban.html" class="card text-center">
-      <i class="ri-bookmark-line text-3xl mb-2 text-indigo-400"></i>
-      <p>初版网页</p>
+    <a href="https://home.linmohan.fun/sub/chuban.html" class="glass-card rounded-xl p-6 flex flex-col items-center justify-center text-center">
+      <i class="ri-bookmark-line text-3xl mb-2 icon-light"></i>
+      <p class="text-light">初版网页</p>
+    </a>
+    <a href="https://service.linmohan.fun" class="glass-card rounded-xl p-6 flex flex-col items-center justify-center text-center">
+      <i class="ri-tools-line text-3xl mb-2 icon-light"></i>
+      <p class="text-light">服务页</p>
+    </a>
+    <a href="https://teach.linmohan.fun" class="glass-card rounded-xl p-6 flex flex-col items-center justify-center text-center">
+      <i class="ri-graduation-cap-line text-3xl mb-2 icon-light"></i>
+      <p class="text-light">教学页</p>
+    </a>
+    <a href="https://boochi.fans" class="glass-card rounded-xl p-6 flex flex-col items-center justify-center text-center">
+      <i class="ri-heart-line text-3xl mb-2 icon-light"></i>
+      <p class="text-light">Boochi 粉丝页</p>
+    </a>
+    <a href="https://bailan.top" class="glass-card rounded-xl p-6 flex flex-col items-center justify-center text-center">
+      <i class="ri-roadster-line text-3xl mb-2 icon-light"></i>
+      <p class="text-light">摆烂页面</p>
+    </a>
+    <a href="https://no.neijuan.fun" class="glass-card rounded-xl p-6 flex flex-col items-center justify-center text-center">
+      <i class="ri-emotion-unhappy-line text-3xl mb-2 icon-light"></i>
+      <p class="text-light">反内卷</p>
+    </a>
+    <a href="https://玩原神玩的.xyz" class="glass-card rounded-xl p-6 flex flex-col items-center justify-center text-center">
+      <i class="ri-gamepad-line text-3xl mb-2 icon-light"></i>
+      <p class="text-light">点击有惊喜</p>
     </a>
   </section>
 
@@ -64,6 +122,53 @@
   <footer class="mt-12 text-center text-gray-500 text-sm">
     <p>© 2025 林墨瀚</p>
   </footer>
+
+  <script>
+    // Initialize the snowflake particles using tsparticles
+    tsParticles.load("tsparticles", {
+      particles: {
+        number: {
+          value: 100,
+          density: {
+            enable: true,
+            value_area: 800
+          }
+        },
+        shape: {
+          type: "circle"
+        },
+        size: {
+          value: 5,
+          random: true
+        },
+        opacity: {
+          value: 0.8,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 1,
+            opacity_min: 0
+          }
+        },
+        move: {
+          enable: true,
+          speed: 1,
+          direction: "bottom",
+          random: true,
+          straight: false,
+          out_mode: "out"
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: {
+            enable: true,
+            mode: "repulse"
+          }
+        }
+      }
+    });
+  </script>
 
 </body>
 </html>
