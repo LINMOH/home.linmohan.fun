@@ -27,9 +27,9 @@
 
 如果您有任何问题或建议，可以通过以下方式联系我：
 
-- 电子邮件：[linmohan@domain.com](mailto:linmohan@domain.com)
+- QQ：2113836986
 - 个人网站：[linmohan.fun](https://linmohan.fun)
 
-## 版权
+## License
 
-© 2025 林墨瀚
+本仓库遵循 [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) 许可协议。
