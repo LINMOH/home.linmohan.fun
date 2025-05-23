@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>👋 林墨瀚的链接页</title>
+  <link rel="stylesheet" href="https://chinese-fonts-cdn.deno.dev/packages/syst/dist/SourceHanSerifCN/result.css" />
+  <style>
+    :root {
+      --bg: #0b131d;
+      --text-color: #e8e6e3;
+      --link-color: gray;
+      --card-bg: #1c252f;
+      --card-hover: #2a3645;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem 1rem;
+      background-color: var(--bg);
+      color: var(--text-color);
+      font-family: 'Source Han Serif CN', serif;
+      font-size: 1.15rem;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .container {
+      max-width: 720px;
+      width: 100%;
+      animation: fadeIn 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .link-card {
+      background-color: var(--card-bg);
+      padding: 1rem 1.5rem;
+      margin: 0.5rem 0;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .link-card:hover {
+      background-color: var(--card-hover);
+    }
+
+    .link-title {
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      opacity: 0.85;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        filter: blur(4px);
+      }
+      to {
+        opacity: 1;
+        filter: blur(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>链接页</h1>
+
+    <div class="link-card"><div class="link-title">主页</div><a href="https://home.linmohan.fun/" target="_blank">https://home.linmohan.fun/</a></div>
+    <div class="link-card"><div class="link-title">博客</div><a href="https://linmohan.fun/" target="_blank">https://linmohan.fun/</a></div>
+    <div class="link-card"><div class="link-title">电子书库</div><a href="https://book.linmohan.fun/" target="_blank">https://book.linmohan.fun/</a></div>
+    <div class="link-card"><div class="link-title">ぼっちランド</div><a href="https://boochi.fans/" target="_blank">https://boochi.fans/</a></div>
+    <div class="link-card"><div class="link-title">「摆烂之巅」</div><a href="https://bailan.top/" target="_blank">https://bailan.top/</a></div>
+    <div class="link-card"><div class="link-title">「恶搞」学校官网</div><a href="https://玩原神玩的.xyz/" target="_blank">https://玩原神玩的.xyz/</a></div>
+    <div class="link-card"><div class="link-title">「不当卷王，当快活人」</div><a href="https://no.neijuan.fun/" target="_blank">https://no.neijuan.fun/</a></div>
+
+    <p style="text-align: center; color: gray; font-size: 0.9rem;">👇 以下是旧版网页 👇</p>
+
+    <div class="link-card"><div class="link-title">初版网页</div><a href="https://linmoh.github.io/old/chuban.html" target="_blank">https://linmoh.github.io/old/chuban.html</a></div>
+    <div class="link-card"><div class="link-title">旧博客</div><a href="https://linmoh.github.io/2024website/" target="_blank">https://linmoh.github.io/2024website/</a></div>
+    <div class="link-card"><div class="link-title">旧主页</div><a href="https://linmoh.github.io/old/old.html" target="_blank">https://linmoh.github.io/old/old.html</a></div>
+    <div class="link-card"><div class="link-title">旧主页</div><a href="https://linmoh.github.io/old/%E6%97%A7%E4%B8%BB%E9%A1%B5.html" target="_blank">https://linmoh.github.io/old/旧主页.html</a></div>
+    <div class="link-card"><div class="link-title">调查问卷</div><a href="https://linmoh.github.io/old/q_a.html" target="_blank">https://linmoh.github.io/old/q_a.html</a></div>
+    <div class="link-card"><div class="link-title">旧的「关于我」</div><a href="https://linmoh.github.io/old/zhuye.html" target="_blank">https://linmoh.github.io/old/zhuye.html</a></div>
+    <div class="link-card"><div class="link-title">旧的「关于我」</div><a href="https://linmoh.github.io/old/ziwojieshao/main.html" target="_blank">https://linmoh.github.io/old/ziwojieshao/main.html</a></div>
+    <div class="link-card"><div class="link-title">服务业</div><a href="https://linmoh.github.io/old/%E6%9C%8D%E5%8A%A11.html" target="_blank">https://linmoh.github.io/old/服务业1.html</a></div>
+    <div class="link-card"><div class="link-title">收费方案</div><a href="https://linmoh.github.io/old/%E6%9C%8D%E5%8A%A12.html" target="_blank">https://linmoh.github.io/old/服务业2.html</a></div>
+    <div class="link-card"><div class="link-title">旧导航页</div><a href="https://linmoh.github.io/old/oldmap.html" target="_blank">https://linmoh.github.io/old/oldmap.html</a></div>
+
+    <p>返回主页请点击 <a href="/index.html">这里</a>。</p>
+
+  </div>
+</body>
+</html>
