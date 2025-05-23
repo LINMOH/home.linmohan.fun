@@ -10,7 +10,16 @@
     :root {
       --primary: #e8e6e3;
       --secondary: #7ab0ff;
-      --bg: #161616;
+      --bg: ##0b131d;
+    }
+
+    /* 页面内容初始隐藏并渐显 */
+    body {
+      opacity: 0;
+      transition: opacity 1.2s ease-in;
+    }
+    body.loaded {
+      opacity: 1;
     }
 
     body {
@@ -91,5 +100,10 @@
     <p>至于 Boochi，她有一份 <a href="https://boochi.fans">专属粉丝页</a>，静静伫立于虚拟世界的角落。</p>
     <p>愿我的时间轴留下些温柔的波痕。愿你也是一个有趣的灵魂，那我们便不期而遇。</p>
   </div>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("loaded");
+    });
+</script>
 </body>
 </html>
