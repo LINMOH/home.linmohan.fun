@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Overflow_Error</title>
   <style>
-    @import url('http://fonts.font.im/css2?family=Noto+Serif+SC:wght@400;600&display=swap');
+    @import url("https://chinese-fonts-cdn.deno.dev/packages/syst/dist/SourceHanSerifCN/result.css");
 
     :root {
       --primary: #e8e6e3;
@@ -16,10 +16,10 @@
     body {
       margin: 0;
       padding: 2rem 1rem;
-      font-family: 'Noto Serif SC', serif;
+      font-family: 'Source Han Serif CN', serif;
       background: var(--bg);
       color: var(--primary);
-      line-height: 1.6;
+      line-height: 1.25;
       min-height: 100vh;
       display: grid;
       place-items: center;
@@ -40,8 +40,9 @@
 
     p {
       margin: 1.6rem 0;
-      font-size: 1.05rem;
+      font-size: 1.2rem; /* 稍微变大一点 */
       opacity: 0.9;
+      text-indent: 2em; /* 开头空两格 */
     }
 
     a {
