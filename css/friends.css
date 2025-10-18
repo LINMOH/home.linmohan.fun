@@ -1,0 +1,75 @@
+/* 友链网格 */
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* 单个友链卡片 */
+.link-card {
+    border: 1px solid #e0e0e0;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.3s ease;
+    background: transparent;
+}
+.link-card:hover {
+    border-color: #999;
+}
+
+/* 头像 */
+.link-avatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* 内容区域 */
+.link-content {
+    flex: 1;
+}
+
+/* 友链标题 */
+.link-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
+}
+
+/* 链接 URL */
+.link-card a {
+    font-size: 0.95rem;
+    color: #666;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+    display: block;
+    word-break: break-all;
+    margin-bottom: 0.5rem;
+}
+.link-card a:hover {
+    border-bottom-color: #aaa;
+}
+
+/* 描述文字 */
+.link-card div:last-child {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+}
