@@ -6,6 +6,10 @@
     margin-top: 1.5rem;
 }
 
+body, code, pre {
+  font-family: 'Cascadia Code', monospace;
+}
+
 /* 单个友链卡片 */
 .link-card {
     border: 1px solid #e0e0e0;

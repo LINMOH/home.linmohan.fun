@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body, code, pre {
+  font-family: 'Cascadia Code', monospace;
+}
 body {
     font-family: 'Cascadia Code', 'Courier New', Consolas, monospace;
     line-height: 1.6;
