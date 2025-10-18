@@ -16,7 +16,7 @@ body {
     background: transparent;
 }
 .top-links a {
-    color: inherit; /* 使用与页面文字相同的颜色 */
+    color: inherit;
     text-decoration: none;
     margin-left: 0.75rem;
     border-bottom: 1px solid transparent;
@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* 确保视频超出部分裁剪，边缘锐利 */
+    overflow: hidden;
     padding: 0 2rem;
     margin-bottom: -300px;
 }
@@ -40,13 +40,13 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: 800px;  /* 限宽 */
+    max-width: 800px;
     height: 100%;
     object-fit: cover;
     z-index: 0;
     pointer-events: none;
-    filter: blur(1.3px); /* 轻微模糊 + 稍微亮一点 */
-    border-radius: 0; /* 保证四个角锐利 */
+    filter: blur(1.3px);
+    border-radius: 0;
     opacity: 0.5;
 }
 .content {
