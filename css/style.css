@@ -158,6 +158,20 @@ blockquote {
     object-fit: cover;     /* 图片填充并裁剪 */
     transform: translate(-50%, -50%); /* 居中裁剪 */
 }
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.section-header h2 {
+    margin: 0;
+}
+.section-title-logo {
+    height: 1.4em; /* 稍微增大 logo，使其更明显 */
+    width: auto;
+    display: inline-block;
+}
 @media (max-width: 768px) {
     .header {
         height: 300px;
@@ -176,6 +190,9 @@ blockquote {
     }
     .books-grid {
         grid-template-columns: 1fr;
+    }
+    .section-title-logo {
+        height: 1em; /* 小屏幕时收起 logo，避免遮挡 */
     }
 }
 @media (min-width: 800px) {
